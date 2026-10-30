@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <servers>
+        <server>
+            <id>nexus</id>
+            <username>${env.NEXUS_USER}</username>
+            <password>${env.NEXUS_PASSWORD}</password>
+        </server>
+    </servers>
+    <mirrors>
+        <mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <url>${env.NEXUS_URL}/repository/maven-public/</url>
+        </mirror>
+    </mirrors>
+</settings>
